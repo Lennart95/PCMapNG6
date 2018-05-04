@@ -1,0 +1,19 @@
+<div>
+  <div class="form-group left float-left">
+      <label for="zipcode">Postcode:</label>
+      <input type="text" #zipcode class="form-control zipcode left" id="zipcode" placeholder="1234AB">
+    </div>
+    <div class="form-group right">
+      <label for="number">Huisnummer:</label>
+      <input type="number" #number class="form-control glyphicon number right" id="number" placeholder="12">
+    </div>
+    <div>
+      <button class="btn btn-outline-success" (click)="zoekPostcodeNummer(zipcode.value, number.value)">Zoek</button>
+  
+      <button class="btn btn-outline-danger" (click)="clear()">Clear</button>
+    </div>
+
+    <div *ngIf="error">
+      <p style="color:red;">Geen resultaten gevonden met {{zipcode.value}} + {{number.value}}</p>
+    </div>
+  </div>
