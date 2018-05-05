@@ -1,5 +1,5 @@
 <agm-map id="map" [latitude]="lat" [longitude]="lng" [streetViewControl]=false [scaleControl]=false [zoom]="zoom">
-  <agm-marker *ngIf="location" id="current"  [latitude]="location.coords.latitude" [longitude]="location.coords.longitude" [iconUrl]="'https://cdn6.aptoide.com/imgs/8/1/7/817360a43abf2775c7b9bf9c26af58dd.png?w=240'"></agm-marker>
+  <agm-marker *ngIf="location" id="current"  [latitude]="location.coords.latitude" [longitude]="location.coords.longitude" [iconUrl]="'assets/img/marker-icon.png'"></agm-marker>
   <agm-marker *ngIf="data" [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
 
